@@ -7,7 +7,8 @@
     "build": "webpack --mode development",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "travis-deploy-once": "travis-deploy-once",
-    "semantic-release-only": "semantic-release"
+    "semantic-release-only": "semantic-release",
+    "commit":"git-cz"
   },
   "author": "Sunil Hari <isunilhari@gmail.com> (https://sunilhari.github.io/)",
   "license": "MIT",
@@ -17,6 +18,8 @@
     "babel-loader": "7.1.4",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-preset-env": "1.6.1",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
     "semantic-release": "12.4.1",
     "travis-deploy-once": "^4.3.4",
     "webpack": "4.1.0",
@@ -25,5 +28,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sunilhari/object-observe.git"
+  },
+  "czConfig":{
+    "path":"node_modules/cz-conventional-changelog"
   }
 }
