@@ -1,10 +1,13 @@
 {
   "name": "object-observe",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "Implementation of object-observe",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release-only": "semantic-release"
   },
   "author": "Sunil Hari <isunilhari@gmail.com> (https://sunilhari.github.io/)",
   "license": "MIT",
@@ -14,7 +17,13 @@
     "babel-loader": "7.1.4",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-preset-env": "1.6.1",
+    "semantic-release": "12.4.1",
+    "travis-deploy-once": "^4.3.4",
     "webpack": "4.1.0",
     "webpack-cli": "2.0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunilhari/object-observe.git"
   }
 }
